@@ -8,8 +8,8 @@ function Testimony(props) {
       src={require( `../images/image-${props.image}.png`)}
       alt="student_photo"/>
       <div className="text-testimony-content">
-        <p className="name-testimony">{props.name} in {props.city} </p>
-        <p className="position-testimony">{props.position} at {props.company}</p>
+        <p className="name-testimony"><strong>{props.name}</strong> in {props.city} </p>
+        <p className="position-testimony">{props.position} at <strong>{props.company}</strong></p>
         <p className="text-testimony">"{props.text}"</p>
       </div>
 
